@@ -1,0 +1,127 @@
+html{
+    --bink: #ff206e;
+    --black: rgb(34, 34, 34);
+    --white: #fff;
+    --dark: rgb(33,37,41);
+}
+.header{
+    background-image: url('../img/logo12.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.nav-link:focus, .nav-link:hover{
+    color: var(--bink);  
+}
+.icons{
+    width: 3rem;
+    height: 3rem;
+    
+}
+.social-media-icons .icons{
+    transition: background-color 2s ;
+}
+.header-content{
+    line-height: 3;
+}
+.social-media-icons .icons:hover{
+    background-color: var(--bink);
+}
+/* about css */
+.about{
+    background-image: url('../img/logo13.jpg');
+}
+.about .about-details p:first-of-type{
+    color: var(--bink);
+}
+.about .title h2{
+    color: #cacaca;
+}
+.about .title h3{
+    color: var(--black);
+}
+
+
+/* services css */
+.services{
+    background-image: url('../img/logo15.jpg');
+    background-position: center;
+}
+.title h2{
+
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 16px;
+    color: var(--black);
+}
+.services  p{
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--white);
+    
+}
+.title h3{
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 900;
+}
+.services .service-item h3{
+position:relative;
+}
+.services .service-item h3::after{
+    content:'';
+    position: absolute;
+    width: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    background-color: var(--bink);
+    top: 40px;
+    transition: width 3s;
+}
+.services .service-item:hover h3:after{
+    width: 60%;
+}
+
+.service-item:hover  .icons{
+    background-color: #ff206e !important;
+
+    
+}
+.service-item .icons{
+    transition: background-color 2s;
+}
+
+/* client css */
+.clients .client img{
+width: 6rem;
+height: 6rem
+}
+.carousel-indicators [data-bs-target]{
+    width: 1.5rem;
+    height: 1.5rem;
+    text-indent: 0;
+    border-radius: 100%;
+}
+.indicators img{
+    width: 1.5rem;
+    height: 1.5rem; 
+}
+
+
+/* Project css */
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color:var(--bink);
+    border: 0;
+}
+.nav-tabs .nav-link{
+    color:var(--black);
+}
+
+
+
+
+
+
+
+
+
